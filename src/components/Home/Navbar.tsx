@@ -53,10 +53,6 @@ const Navbar = ({
       tl.to(".brandmark", {
         opacity: 1,
       });
-      tl.to(".secondary-menu", {
-        display: "flex",
-        opacity: 1,
-      });
 
       const sections = [
         { id: "hero", color: "#ffff" },
@@ -133,23 +129,7 @@ const Navbar = ({
           </div>
         </Link>
 
-        <div className="secondary-menu hidden items-center gap-4 opacity-0">
-          <p
-            style={{ color: logoColor }}
-            className="text-base font-light transition-colors duration-300"
-          >
-            Menu
-          </p>
-          <div className="cursor-pointer space-y-[3px]">
-            {[0, 1, 2].map((item) => (
-              <div
-                key={item}
-                style={{ backgroundColor: logoColor }}
-                className="line h-[1.5px] w-5 transition-colors duration-300"
-              />
-            ))}
-          </div>
-        </div>
+
 
         <div className="links hidden items-center gap-10 overflow-hidden sm:flex">
           <div className="sm:flex items-center gap-5">
