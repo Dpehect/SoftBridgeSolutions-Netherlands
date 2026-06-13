@@ -6,7 +6,6 @@ import { Routes, Route, useLocation } from "react-router";
 import WorkShowCase from "./components/Work/WorkShowCase";
 import { AnimatePresence } from "framer-motion";
 import Loader from "./components/Loader";
-import NotSupported from "./components/NotSupported";
 
 const App = () => {
   const [logoColor, setLogoColor] = useState("#fff");
@@ -17,9 +16,6 @@ const App = () => {
   const location = useLocation();
   const [isInitialLoad, setIsInitialLoad] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
-  const [isPortrait, setIsPortrait] = useState(
-    window.innerHeight > window.innerWidth
-  );
 
   // Handle initial page load and route changes
   useEffect(() => {
@@ -38,58 +34,40 @@ const App = () => {
     }
   }, [location.pathname, isInitialLoad]);
 
-  // Detect viewport orientation changes
-  useEffect(() => {
-    const handleResize = () => {
-      const isNowPortrait = window.innerHeight > window.innerWidth;
-      if (isNowPortrait !== isPortrait) {
-        setIsPortrait(isNowPortrait);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [isPortrait]);
   return (
     <div
       id="parentWrapper"
       className="parentWrapper relative h-screen w-screen"
     >
-      {isPortrait ? (
-        <NotSupported />
-      ) : (
-        <>
-          <Loader />
-          {!isLoading && (
-            <Navbar
-              pathName={location?.pathname}
-              logoColor={logoColor}
-              setLogoColor={setLogoColor}
-            />
-          )}
-          <AnimatePresence mode="sync">
-            {!isLoading && (
-              <Routes location={location} key={location.pathname}>
-                <Route
-                  path="/"
-                  element={
-                    <Home
-                      setCursorProps={setCursorProps}
-                      setLogoColor={setLogoColor}
-                    />
-                  }
-                />
-                <Route
-                  path="/work"
-                  element={<WorkShowCase setLogoColor={setLogoColor} />}
-                />
-              </Routes>
-            )}
-          </AnimatePresence>
-
-          {!isLoading && <Cursor cursorProps={cursorProps} />}
-        </>
+      <Loader />
+      {!isLoading && (
+        <Navbar
+          pathName={location?.pathname}
+          logoColor={logoColor}
+          setLogoColor={setLogoColor}
+        />
       )}
+      <AnimatePresence mode="sync">
+        {!isLoading && (
+          <Routes location={location} key={location.pathname}>
+            <Route
+              path="/"
+              element={
+                <Home
+                  setCursorProps={setCursorProps}
+                  setLogoColor={setLogoColor}
+                />
+              }
+            />
+            <Route
+              path="/work"
+              element={<WorkShowCase setLogoColor={setLogoColor} />}
+            />
+          </Routes>
+        )}
+      </AnimatePresence>
+
+      {!isLoading && <Cursor cursorProps={cursorProps} />}
     </div>
   );
 };
