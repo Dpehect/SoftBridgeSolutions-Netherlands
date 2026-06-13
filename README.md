@@ -43,42 +43,6 @@ The project uses multiple animation-heavy sections, so performance-sensitive are
 
 Vercel is configured to rewrite all routes to `index.html`, so direct visits to `/work` work correctly in production.
 
-## Local Development
-
-```bash
-npm install
-npm run dev
-```
-
-Default local URL:
-
-```text
-http://localhost:3000
-```
-
-If Vite chooses another port, use the URL printed in the terminal.
-
-## Quality Checks
-
-```bash
-npm run lint
-npm run build
-```
-
-`npm run build` runs TypeScript project compilation first and then creates the Vite production bundle in `dist`.
-
-## Vercel Deployment
-
-This repository is ready for Vercel.
-
-Recommended Vercel settings:
-
-- Framework preset: Vite
-- Install command: `npm install`
-- Build command: `npm run build`
-- Output directory: `dist`
-
-The included `vercel.json` handles client-side routing fallback.
 
 ## Links
 
