@@ -49,11 +49,11 @@ const Work = ({
   return (
     <div
       id="work"
-      className="max-w-screen-2xl mx-auto px-5 sm:px-52 py-20 bg-white"
+      className="max-w-screen-2xl mx-auto px-5 sm:px-12 md:px-24 lg:px-36 xl:px-52 py-20 bg-white"
     >
       <div className="featured flex items-center gap-3">
         <svg
-          className="size-3 sm:size-7"
+          className="size-3 sm:size-4 md:size-6 lg:size-7"
           viewBox="0 0 12 12"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -63,12 +63,12 @@ const Work = ({
             fill="currentColor"
           ></path>
         </svg>
-        <h2 className="capitalize font-normal text-sm sm:text-3xl">
+        <h2 className="capitalize font-normal text-sm sm:text-lg md:text-2xl lg:text-3xl">
           featured projects
         </h2>
       </div>
 
-      <h2 className="text-7xl sm:text-[14rem] tracking-tight my-5 overflow-hidden">
+      <h2 className="text-6xl sm:text-7xl md:text-9xl lg:text-[11rem] xl:text-[14rem] tracking-tight my-5 overflow-hidden">
         <motion.span
           initial={{ y: "90%", rotate: 30 }}
           whileInView={{ y: "0", rotate: 0 }}
@@ -79,7 +79,7 @@ const Work = ({
           Work
         </motion.span>
       </h2>
-      <p className="text-lg leading-[1.5rem] sm:text-xl sm:w-2/3 sm:opacity-40">
+      <p className="text-base sm:text-lg md:text-xl leading-relaxed w-full md:w-2/3 opacity-80 md:opacity-40">
         Selected SoftBridge Solutions work across startup platforms, commerce
         systems, operational tools, and high-polish brand experiences.
       </p>

@@ -21,10 +21,10 @@ const Spread = () => {
         </div>
 
         <div className="mt-7 text-center">
-          <h1 className="text-6xl leading-[0.92] tracking-tight sm:text-[8rem]">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[8rem] leading-[0.92] tracking-tight">
             Build
           </h1>
-          <h1 className="text-6xl leading-[0.92] tracking-tight sm:text-[8rem]">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[8rem] leading-[0.92] tracking-tight">
             the Future
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-[1.7] text-[#0d0e13]/60 sm:mt-10 sm:text-xl">

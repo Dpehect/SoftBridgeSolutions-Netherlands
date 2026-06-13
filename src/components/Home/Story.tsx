@@ -62,7 +62,7 @@ const Story = ({
         <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-r from-[#070707] via-[#070707]/95 to-[#070707]/20" />
         <div
           id="storyTextContainer"
-          className="absolute left-0 top-1/2 z-[2] w-full -translate-y-1/2 px-7 sm:px-28"
+          className="absolute left-0 top-1/2 z-[2] w-full -translate-y-1/2 px-7 sm:px-12 md:px-20 lg:px-28"
         >
           <div className="max-w-[34rem] space-y-6 sm:max-w-[38rem] sm:space-y-8">
             <div className="space-y-2 sm:space-y-3">

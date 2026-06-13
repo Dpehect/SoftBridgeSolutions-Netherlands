@@ -70,15 +70,15 @@ const Hero = ({
       </div>
 
       <div className="absolute w-full top-0 left-0">
-        <div className="heroTextContainer text text-white  mx-auto h-full px-5 sm:px-32">
-          <div className="para mt-[32rem]">
+        <div className="heroTextContainer text text-white mx-auto h-full px-5 sm:px-12 md:px-20 lg:px-32">
+          <div className="para mt-[16rem] sm:mt-[24rem] md:mt-[32rem]">
             {[
               " SoftBridge Solutions is a digital product studio",
               " building high-performance interfaces, platforms,",
               " and launch-ready software for ambitious teams.",
             ].map((item) => (
               <p
-                className="font-light overflow-hidden text-lg sm:text-2xl leading-[1.5rem]"
+                className="font-light overflow-hidden text-lg md:text-xl xl:text-2xl leading-relaxed"
                 key={item}
               >
                 <span className="block">{item}</span>
@@ -86,10 +86,10 @@ const Hero = ({
             ))}
           </div>
 
-          <div className="headings mt-5 sm:mt-44">
+          <div className="headings mt-5 sm:mt-24 md:mt-32 lg:mt-40 xl:mt-44">
             {["SoftBridge", "Solutions", "Studio"].map((item) => (
               <h1
-                className=" -mt-3 overflow-hidden text-5xl leading-[1.25] tracking-tighter sm:-mt-16 sm:text-[12rem]"
+                className=" -mt-2 overflow-hidden text-5xl leading-[1.15] tracking-tighter sm:text-6xl sm:-mt-4 md:text-8xl md:-mt-6 lg:text-[10rem] lg:-mt-10 xl:text-[12rem] xl:-mt-14"
                 key={item}
               >
                 <span className="block">{item}</span>
@@ -112,58 +112,18 @@ const Hero = ({
           </div>
 
           <div className="mt-20 sm:mt-32">
-            <p className="font-light text-lg sm:text-2xl sm:w-[37.33%] leading-[1.5rem]">
+            <p className="font-light text-lg md:text-xl xl:text-2xl w-full md:w-[60%] lg:w-[45%] xl:w-[37.33%] leading-relaxed">
               We design and engineer brand systems, web experiences, and
               product interfaces that feel sharp, deliberate, and ready for real
               users from day one.
             </p>
-            <div className="flex justify-between items-center mt-5 sm:mt-20">
+            <div className="flex justify-between items-center mt-8 md:mt-16 xl:mt-20">
               <a
                 className="border-b sm:text-lg border-white inline-block"
                 href="/work"
               >
                 View Work
               </a>
-
-              <div className="flex gap-32 max-sm:hidden">
-                <div className="space-y-3">
-                  {["Work", "Studio", "Systems", "Contact"].map((item) => {
-                    return (
-                      <a
-                        key={item}
-                        className="block text-sm opacity-85 capitalize"
-                        href="#"
-                      >
-                        {item}
-                      </a>
-                    );
-                  })}
-                </div>
-                <div className="space-y-3">
-                  {[
-                    {
-                      label: "LinkedIn / Yunus Emre Gurlek",
-                      href: "https://www.linkedin.com/in/yunus-emre-g%C3%BCrlek-4173a3224/",
-                    },
-                    {
-                      label: "GitHub / Dpehect",
-                      href: "https://github.com/Dpehect",
-                    },
-                  ].map((item) => {
-                    return (
-                      <a
-                        key={item.label}
-                        className="block text-sm opacity-85 "
-                        href={item.href}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        {item.label}
-                      </a>
-                    );
-                  })}
-                </div>
-              </div>
             </div>
           </div>
         </div>

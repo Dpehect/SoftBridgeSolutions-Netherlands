@@ -163,13 +163,13 @@ const Navbar = ({
             <a href={GITHUB_URL} target="_blank" rel="noreferrer">
               <FaGithub
                 style={{ color: logoColor }}
-                className="h-[2vw] w-[1.5vw] transition-all hover:text-black"
+                className="h-5 w-5 transition-all hover:text-black"
               />
             </a>
             <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
               <FaLinkedin
                 style={{ color: logoColor }}
-                className="h-[2vw] w-[1.5vw] transition-all hover:text-black"
+                className="h-5 w-5 transition-all hover:text-black"
               />
             </a>
           </div>

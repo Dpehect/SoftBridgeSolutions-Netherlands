@@ -57,9 +57,9 @@ const Playreel = () => {
           <h2 className="text-sm">Work in motion</h2>
         </div>
 
-        <h2 className="flex w-full items-center justify-center gap-24 sm:gap-[38%]">
-          <div className="text-6xl sm:text-9xl">Build</div>
-          <div className="text-6xl sm:text-9xl">Reel</div>
+        <h2 className="flex w-full items-center justify-center gap-6 sm:gap-16 md:gap-[20%] lg:gap-[38%]">
+          <div className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl">Build</div>
+          <div className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl">Reel</div>
         </h2>
 
         <p className="text-center text-sm">
