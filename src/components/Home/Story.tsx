@@ -96,6 +96,17 @@ const Story = ({
                   GitHub
                 </a>
               </div>
+              <address className="not-italic text-[#e0ccbb]/52">
+                SoftBridge Solutions
+                <br />
+                Digital Head Office
+                <br />
+                Gustav Mahlerplein 2
+                <br />
+                1082 MA Amsterdam
+                <br />
+                Netherlands
+              </address>
             </div>
           </div>
         </div>
