@@ -17,7 +17,7 @@ const Spread = () => {
               fill="currentColor"
             ></path>
           </svg>
-          <h2 className="text-sm">SoftBridge notes</h2>
+          <h2 className="text-sm">SoftBridge Presents</h2>
         </div>
 
         <div className="mt-7 text-center">
