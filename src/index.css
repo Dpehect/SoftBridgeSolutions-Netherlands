@@ -15,3 +15,11 @@ body::-webkit-scrollbar {
     font-family: "Poppins", sans-serif;
   }
 }
+
+#homeFixedContainer::-webkit-scrollbar {
+  display: none;
+}
+#homeFixedContainer {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

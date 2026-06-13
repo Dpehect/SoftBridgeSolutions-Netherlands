@@ -40,7 +40,7 @@ const Home = ({ setCursorProps, setLogoColor }: HomeProps) => {
       <motion.div
         id="homeFixedContainer"
         ref={containerRef}
-        className=" overflow-hidden fixed inset-0 "
+        className=" overflow-y-auto fixed inset-0 "
         {...anim(innerDivTransition)}
         onAnimationComplete={() => ScrollTrigger.refresh()} // Refresh scroll positions
       >

@@ -14,6 +14,7 @@ export const useLenisGsap = (containerRef: React.RefObject<HTMLDivElement>) => {
     lenisRef.current = new Lenis({
       wrapper: containerRef.current,
       content: containerRef.current?.firstChild as HTMLDivElement,
+      syncTouch: true,
     });
 
     const update = (time: number) => {
